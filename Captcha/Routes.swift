@@ -11,19 +11,15 @@ import SwiftyJSON
 
 class Routes {
     
-    func sendCaptchaToken(user_token: String, captchaToken: String, completion: ((_ response: ServerResponse?, _ error: String?) -> Void)?) {
+    func sendCaptchaToken(captchaToken: String, completion: ((_ response: ServerResponse?, _ error: String?) -> Void)?) {
         
-        var params = [String: String]()
+        let params = [String: String]()
         let body = [
-            "user_token": user_token,
-            "captchaToken": captchaToken
+            "g-recaptcha-response":captchaToken
             ] as [String: Any]
         
-        Request.request("/api/submitToken", requestType: "POST", body: body) { json, error in
-            guard let courses = json?["courses"].array else {
-                completion?(nil, error)
-                return
-            }
+        Request.request("/submit", requestType: "POST", params: params, body: body) { json, error in
+
             completion?(ServerResponse(json: json!), error)
         }
     }
