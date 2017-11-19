@@ -39,7 +39,6 @@
 		D0838B341FC1084F00BBFB27 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		D0838B361FC1084F00BBFB27 /* SolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveViewController.swift; sourceTree = "<group>"; };
-		D0838B371FC1085000BBFB27 /* Project Destroyer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project Destroyer-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0838B381FC1085000BBFB27 /* SFRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRoutes.swift; sourceTree = "<group>"; };
 		D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		EEF11C4E141B38FC072DFAAC /* Pods-Captcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Captcha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Captcha/Pods-Captcha.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +90,6 @@
 				D0838B331FC1084F00BBFB27 /* Client.swift */,
 				D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */,
 				D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */,
-				D0838B371FC1085000BBFB27 /* Project Destroyer-Bridging-Header.h */,
 				D0838B321FC1084F00BBFB27 /* Request.swift */,
 				D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */,
 				D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */,
