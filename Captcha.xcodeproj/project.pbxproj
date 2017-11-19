@@ -92,10 +92,10 @@
 				D0838B331FC1084F00BBFB27 /* Client.swift */,
 				D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */,
 				D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */,
-				D0838B321FC1084F00BBFB27 /* Request.swift */,
 				D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */,
 				D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */,
 				D0838B441FC10D1100BBFB27 /* AcknowledgmentsTableViewController.swift */,
+				D0838B321FC1084F00BBFB27 /* Request.swift */,
 				D0838B381FC1085000BBFB27 /* Routes.swift */,
 				D0838B361FC1084F00BBFB27 /* SolveViewController.swift */,
 				D00DEF431FC103D900CDC5B1 /* Main.storyboard */,
@@ -401,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F62D38X3Q2;
+				DEVELOPMENT_TEAM = C7HGN23NTW;
 				INFOPLIST_FILE = Captcha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.petersoboyejo.Captcha;
@@ -419,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F62D38X3Q2;
+				DEVELOPMENT_TEAM = C7HGN23NTW;
 				INFOPLIST_FILE = Captcha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.petersoboyejo.Captcha;

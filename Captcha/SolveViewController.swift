@@ -14,13 +14,14 @@ class SolveViewController: UIViewController, WKUIDelegate, WKNavigationDelegate,
     
     var webView: WKWebView!
     private var timer: Timer?
+    let routes = Routes()
     
     @IBAction func refreshButton(_ sender: Any) {
         self.loadPage()
     }
     
     let sitekey = "6LeoeSkTAAAAAA9rkZs5oS82l69OEYjKRZAiKdaF"
-    let baseURL = "http://checkout.shopify.com"
+    let baseURL = "http://supremenewyork.com"
     let imageURL = ""
     
     override func loadView() {
@@ -77,7 +78,7 @@ class SolveViewController: UIViewController, WKUIDelegate, WKNavigationDelegate,
     }
     
     func submitToken(token: String!) {
-        // TODO
+        routes.sendCaptchaToken(captchaToken: token, completion: nil)
     }
 
     
