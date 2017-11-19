@@ -4,6 +4,9 @@ Magical iOS Captcha Solver thing that allows you to utilize this base to any one
 ### Who
 Written by <a href="http://petersoboyejo.com/">@dzt</a>, made better by you.
 
+### Like my work?
+Donate me Bitcoin `1BMkdD7Q8ywwHFHShQLUD1Ks1YviE4R9Zm` so I can buy pods and make more stuff for y'all.
+
 ## License
 
 ```

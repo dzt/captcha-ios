@@ -8,23 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		A2A0EA06CE590184CFEF7B75 /* Pods_Captcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8588DE5E6AC9AD1D908183E /* Pods_Captcha.framework */; };
-		D00DEF401FC103D900CDC5B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00DEF3F1FC103D900CDC5B1 /* AppDelegate.swift */; };
-		D00DEF421FC103D900CDC5B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00DEF411FC103D900CDC5B1 /* ViewController.swift */; };
 		D00DEF451FC103D900CDC5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00DEF431FC103D900CDC5B1 /* Main.storyboard */; };
 		D00DEF471FC103D900CDC5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00DEF461FC103D900CDC5B1 /* Assets.xcassets */; };
 		D00DEF4A1FC103D900CDC5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00DEF481FC103D900CDC5B1 /* LaunchScreen.storyboard */; };
+		D0838B3A1FC1085000BBFB27 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */; };
+		D0838B3B1FC1085000BBFB27 /* ConfigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */; };
+		D0838B3C1FC1085000BBFB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B311FC1084F00BBFB27 /* AppDelegate.swift */; };
+		D0838B3D1FC1085000BBFB27 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B321FC1084F00BBFB27 /* Request.swift */; };
+		D0838B3E1FC1085000BBFB27 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B331FC1084F00BBFB27 /* Client.swift */; };
+		D0838B3F1FC1085000BBFB27 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B341FC1084F00BBFB27 /* Account.swift */; };
+		D0838B401FC1085000BBFB27 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */; };
+		D0838B411FC1085000BBFB27 /* SolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B361FC1084F00BBFB27 /* SolveViewController.swift */; };
+		D0838B421FC1085000BBFB27 /* SFRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B381FC1085000BBFB27 /* SFRoutes.swift */; };
+		D0838B431FC1085000BBFB27 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CD978C0F40E8978E2810314 /* Pods-Captcha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Captcha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Captcha/Pods-Captcha.debug.xcconfig"; sourceTree = "<group>"; };
 		A8588DE5E6AC9AD1D908183E /* Pods_Captcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Captcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00DEF3C1FC103D900CDC5B1 /* Captcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Captcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D00DEF3F1FC103D900CDC5B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D00DEF411FC103D900CDC5B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D00DEF441FC103D900CDC5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D00DEF461FC103D900CDC5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00DEF491FC103D900CDC5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D00DEF4B1FC103D900CDC5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableViewController.swift; sourceTree = "<group>"; };
+		D0838B311FC1084F00BBFB27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0838B321FC1084F00BBFB27 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		D0838B331FC1084F00BBFB27 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		D0838B341FC1084F00BBFB27 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		D0838B361FC1084F00BBFB27 /* SolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveViewController.swift; sourceTree = "<group>"; };
+		D0838B371FC1085000BBFB27 /* Project Destroyer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project Destroyer-Bridging-Header.h"; sourceTree = "<group>"; };
+		D0838B381FC1085000BBFB27 /* SFRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRoutes.swift; sourceTree = "<group>"; };
+		D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		EEF11C4E141B38FC072DFAAC /* Pods-Captcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Captcha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Captcha/Pods-Captcha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +86,17 @@
 		D00DEF3E1FC103D900CDC5B1 /* Captcha */ = {
 			isa = PBXGroup;
 			children = (
-				D00DEF3F1FC103D900CDC5B1 /* AppDelegate.swift */,
-				D00DEF411FC103D900CDC5B1 /* ViewController.swift */,
+				D0838B341FC1084F00BBFB27 /* Account.swift */,
+				D0838B311FC1084F00BBFB27 /* AppDelegate.swift */,
+				D0838B331FC1084F00BBFB27 /* Client.swift */,
+				D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */,
+				D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */,
+				D0838B371FC1085000BBFB27 /* Project Destroyer-Bridging-Header.h */,
+				D0838B321FC1084F00BBFB27 /* Request.swift */,
+				D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */,
+				D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */,
+				D0838B381FC1085000BBFB27 /* SFRoutes.swift */,
+				D0838B361FC1084F00BBFB27 /* SolveViewController.swift */,
 				D00DEF431FC103D900CDC5B1 /* Main.storyboard */,
 				D00DEF461FC103D900CDC5B1 /* Assets.xcassets */,
 				D00DEF481FC103D900CDC5B1 /* LaunchScreen.storyboard */,
@@ -123,6 +149,7 @@
 				TargetAttributes = {
 					D00DEF3B1FC103D900CDC5B1 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -223,8 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00DEF421FC103D900CDC5B1 /* ViewController.swift in Sources */,
-				D00DEF401FC103D900CDC5B1 /* AppDelegate.swift in Sources */,
+				D0838B421FC1085000BBFB27 /* SFRoutes.swift in Sources */,
+				D0838B3C1FC1085000BBFB27 /* AppDelegate.swift in Sources */,
+				D0838B3D1FC1085000BBFB27 /* Request.swift in Sources */,
+				D0838B3A1FC1085000BBFB27 /* ServerResponse.swift in Sources */,
+				D0838B431FC1085000BBFB27 /* HistoryTableViewController.swift in Sources */,
+				D0838B3E1FC1085000BBFB27 /* Client.swift in Sources */,
+				D0838B411FC1085000BBFB27 /* SolveViewController.swift in Sources */,
+				D0838B3B1FC1085000BBFB27 /* ConfigTableViewController.swift in Sources */,
+				D0838B3F1FC1085000BBFB27 /* Account.swift in Sources */,
+				D0838B401FC1085000BBFB27 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,12 +397,14 @@
 			baseConfigurationReference = 6CD978C0F40E8978E2810314 /* Pods-Captcha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F62D38X3Q2;
 				INFOPLIST_FILE = Captcha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.petersoboyejo.Captcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,6 +415,7 @@
 			baseConfigurationReference = EEF11C4E141B38FC072DFAAC /* Pods-Captcha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F62D38X3Q2;
 				INFOPLIST_FILE = Captcha/Info.plist;
