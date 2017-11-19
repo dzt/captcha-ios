@@ -14,10 +14,10 @@ class Client {
         return Static.instance
     }
     
-    public let sfr: SFRoutes
+    public let cr: Routes
     
     private init() {
-        sfr = SFRoutes()
+        cr = Routes()
     }
 }
 

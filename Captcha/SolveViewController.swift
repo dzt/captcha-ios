@@ -21,7 +21,7 @@ class SolveViewController: UIViewController, WKUIDelegate, WKNavigationDelegate,
     
     let sitekey = "6LeoeSkTAAAAAA9rkZs5oS82l69OEYjKRZAiKdaF"
     let baseURL = "http://checkout.shopify.com"
-    let imageURL = "https://avatars0.githubusercontent.com/u/6421443?s=460&v=4"
+    let imageURL = ""
     
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
@@ -54,7 +54,7 @@ class SolveViewController: UIViewController, WKUIDelegate, WKNavigationDelegate,
         self.webView.evaluateJavaScript("document.getElementById('g-recaptcha-response').value;") { (any,error) -> Void in
             let response = any as! String
             if response != "" {
-                let myAlert = UIAlertController(title: "Token Sent!", message: "Captcha Token has been sent (7V892U)", preferredStyle: UIAlertControllerStyle.alert)
+                let myAlert = UIAlertController(title: "Token Sent!", message: "Captcha Token has been sent.", preferredStyle: UIAlertControllerStyle.alert)
                 myAlert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
                 self.present(myAlert, animated: true, completion: nil)
                 self.submitToken(token: response)

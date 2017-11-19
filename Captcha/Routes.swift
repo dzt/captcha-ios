@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class SFRoutes {
+class Routes {
     
     func sendCaptchaToken(user_token: String, captchaToken: String, completion: ((_ response: ServerResponse?, _ error: String?) -> Void)?) {
         

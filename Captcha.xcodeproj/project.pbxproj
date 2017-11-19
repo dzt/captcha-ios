@@ -19,8 +19,9 @@
 		D0838B3F1FC1085000BBFB27 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B341FC1084F00BBFB27 /* Account.swift */; };
 		D0838B401FC1085000BBFB27 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */; };
 		D0838B411FC1085000BBFB27 /* SolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B361FC1084F00BBFB27 /* SolveViewController.swift */; };
-		D0838B421FC1085000BBFB27 /* SFRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B381FC1085000BBFB27 /* SFRoutes.swift */; };
+		D0838B421FC1085000BBFB27 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B381FC1085000BBFB27 /* Routes.swift */; };
 		D0838B431FC1085000BBFB27 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */; };
+		D0838B451FC10D1100BBFB27 /* AcknowledgmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B441FC10D1100BBFB27 /* AcknowledgmentsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +40,9 @@
 		D0838B341FC1084F00BBFB27 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		D0838B361FC1084F00BBFB27 /* SolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveViewController.swift; sourceTree = "<group>"; };
-		D0838B381FC1085000BBFB27 /* SFRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRoutes.swift; sourceTree = "<group>"; };
+		D0838B381FC1085000BBFB27 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		D0838B441FC10D1100BBFB27 /* AcknowledgmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgmentsTableViewController.swift; sourceTree = "<group>"; };
 		EEF11C4E141B38FC072DFAAC /* Pods-Captcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Captcha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Captcha/Pods-Captcha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,11 +95,12 @@
 				D0838B321FC1084F00BBFB27 /* Request.swift */,
 				D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */,
 				D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */,
-				D0838B381FC1085000BBFB27 /* SFRoutes.swift */,
+				D0838B441FC10D1100BBFB27 /* AcknowledgmentsTableViewController.swift */,
+				D0838B381FC1085000BBFB27 /* Routes.swift */,
 				D0838B361FC1084F00BBFB27 /* SolveViewController.swift */,
 				D00DEF431FC103D900CDC5B1 /* Main.storyboard */,
-				D00DEF461FC103D900CDC5B1 /* Assets.xcassets */,
 				D00DEF481FC103D900CDC5B1 /* LaunchScreen.storyboard */,
+				D00DEF461FC103D900CDC5B1 /* Assets.xcassets */,
 				D00DEF4B1FC103D900CDC5B1 /* Info.plist */,
 			);
 			path = Captcha;
@@ -248,7 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0838B421FC1085000BBFB27 /* SFRoutes.swift in Sources */,
+				D0838B421FC1085000BBFB27 /* Routes.swift in Sources */,
 				D0838B3C1FC1085000BBFB27 /* AppDelegate.swift in Sources */,
 				D0838B3D1FC1085000BBFB27 /* Request.swift in Sources */,
 				D0838B3A1FC1085000BBFB27 /* ServerResponse.swift in Sources */,
@@ -256,6 +259,7 @@
 				D0838B3E1FC1085000BBFB27 /* Client.swift in Sources */,
 				D0838B411FC1085000BBFB27 /* SolveViewController.swift in Sources */,
 				D0838B3B1FC1085000BBFB27 /* ConfigTableViewController.swift in Sources */,
+				D0838B451FC10D1100BBFB27 /* AcknowledgmentsTableViewController.swift in Sources */,
 				D0838B3F1FC1085000BBFB27 /* Account.swift in Sources */,
 				D0838B401FC1085000BBFB27 /* SettingsTableViewController.swift in Sources */,
 			);

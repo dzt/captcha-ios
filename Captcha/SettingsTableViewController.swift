@@ -51,9 +51,7 @@ class SettingsTableViewController : UITableViewController, MFMailComposeViewCont
                 self.showSendMailErrorAlert()
             }
         } else if indexPath.section == 1 && indexPath.row == 1 {
-            openURL("http://splashforce.io/")
-        } else if indexPath.section == 1 && indexPath.row == 2 {
-           openTwitter("splashforcebot")
+            openURL("https://github.com/dzt/captcha-ios")
         } else if indexPath.section == 2 && indexPath.row == 0 {
             print("Version")
         } else {
@@ -65,8 +63,8 @@ class SettingsTableViewController : UITableViewController, MFMailComposeViewCont
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
         
-        mailComposerVC.setToRecipients(["support@splashforce.io"])
-        mailComposerVC.setSubject("SplashForce App")
+        mailComposerVC.setToRecipients(["thepcmrtim@gmail.com"])
+        mailComposerVC.setSubject("Captcha Solver")
         
         return mailComposerVC
     }
