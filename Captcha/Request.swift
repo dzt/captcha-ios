@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class Request {
     
-    private static var baseURL = "http://xxxxxx.herokuapp.com"
+    private static var baseURL = "http://127.0.0.1:8080"
     
     class func request(_ endpoint: String, requestType: String = "GET", headers: [String: String] = [String: String](), params: [String: String] = [String: String](), body: Any? = nil, completion: ((_ json: JSON?, _ error: String?) -> Void)?) {
         Request.dataRequest("\(baseURL)\(endpoint)", requestType: requestType, headers: headers, params: params, body: body) { (data, error) in

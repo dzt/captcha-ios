@@ -20,7 +20,7 @@ class Routes {
             ] as [String: Any]
         
         Request.request("/api/submitToken", requestType: "POST", body: body) { json, error in
-            guard let courses = json?["courses"].array else {
+            guard let res = json?["message"].string else {
                 completion?(nil, error)
                 return
             }

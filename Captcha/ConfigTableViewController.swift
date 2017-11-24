@@ -10,7 +10,6 @@ import UIKit
 
 class ConfigTableViewController: UITableViewController {
     
-    @IBOutlet weak var fetchSwitch: UISwitch!
     @IBOutlet weak var sitekeyField: UITextField!
     @IBOutlet weak var domainField: UITextField!
     

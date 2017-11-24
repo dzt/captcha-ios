@@ -11,6 +11,7 @@
 		D00DEF451FC103D900CDC5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00DEF431FC103D900CDC5B1 /* Main.storyboard */; };
 		D00DEF471FC103D900CDC5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00DEF461FC103D900CDC5B1 /* Assets.xcassets */; };
 		D00DEF4A1FC103D900CDC5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00DEF481FC103D900CDC5B1 /* LaunchScreen.storyboard */; };
+		D012A6F41FC8633F0094EBFD /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012A6F31FC8633F0094EBFD /* Log.swift */; };
 		D0838B3A1FC1085000BBFB27 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */; };
 		D0838B3B1FC1085000BBFB27 /* ConfigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */; };
 		D0838B3C1FC1085000BBFB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838B311FC1084F00BBFB27 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		D00DEF461FC103D900CDC5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00DEF491FC103D900CDC5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D00DEF4B1FC103D900CDC5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D012A6F31FC8633F0094EBFD /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 		D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableViewController.swift; sourceTree = "<group>"; };
 		D0838B311FC1084F00BBFB27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,13 +89,14 @@
 		D00DEF3E1FC103D900CDC5B1 /* Captcha */ = {
 			isa = PBXGroup;
 			children = (
-				D0838B341FC1084F00BBFB27 /* Account.swift */,
 				D0838B311FC1084F00BBFB27 /* AppDelegate.swift */,
+				D0838B341FC1084F00BBFB27 /* Account.swift */,
+				D0838B321FC1084F00BBFB27 /* Request.swift */,
+				D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */,
+				D012A6F31FC8633F0094EBFD /* Log.swift */,
 				D0838B331FC1084F00BBFB27 /* Client.swift */,
 				D0838B301FC1084E00BBFB27 /* ConfigTableViewController.swift */,
 				D0838B391FC1085000BBFB27 /* HistoryTableViewController.swift */,
-				D0838B321FC1084F00BBFB27 /* Request.swift */,
-				D0838B2F1FC1084E00BBFB27 /* ServerResponse.swift */,
 				D0838B351FC1084F00BBFB27 /* SettingsTableViewController.swift */,
 				D0838B441FC10D1100BBFB27 /* AcknowledgmentsTableViewController.swift */,
 				D0838B381FC1085000BBFB27 /* Routes.swift */,
@@ -253,6 +256,7 @@
 			files = (
 				D0838B421FC1085000BBFB27 /* Routes.swift in Sources */,
 				D0838B3C1FC1085000BBFB27 /* AppDelegate.swift in Sources */,
+				D012A6F41FC8633F0094EBFD /* Log.swift in Sources */,
 				D0838B3D1FC1085000BBFB27 /* Request.swift in Sources */,
 				D0838B3A1FC1085000BBFB27 /* ServerResponse.swift in Sources */,
 				D0838B431FC1085000BBFB27 /* HistoryTableViewController.swift in Sources */,

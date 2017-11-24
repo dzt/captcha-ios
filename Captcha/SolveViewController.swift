@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 import SVProgressHUD
+import RealmSwift
 
 class SolveViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
     
@@ -54,11 +55,47 @@ class SolveViewController: UIViewController, WKUIDelegate, WKNavigationDelegate,
         self.webView.evaluateJavaScript("document.getElementById('g-recaptcha-response').value;") { (any,error) -> Void in
             let response = any as! String
             if response != "" {
-                let myAlert = UIAlertController(title: "Token Sent!", message: "Captcha Token has been sent.", preferredStyle: UIAlertControllerStyle.alert)
-                myAlert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
-                self.present(myAlert, animated: true, completion: nil)
-                self.submitToken(token: response)
-                return self.loadPage()
+                
+                SVProgressHUD.show()
+                
+                Client.shared.cr.sendCaptchaToken(user_token: "rawr xD", captchaToken: response) { summary, error in
+                    guard summary != nil else {
+                        print("Error sending token.")
+                        let errAlert = UIAlertController(title: "Error Occured", message: "An error has occured while trying to subit your captcha token please try again.", preferredStyle: UIAlertControllerStyle.alert)
+                        errAlert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(errAlert, animated: true, completion: nil)
+                        SVProgressHUD.dismiss()
+                        return self.loadPage()
+                    }
+                    
+                    
+                    DispatchQueue.main.async {
+                        SVProgressHUD.dismiss()
+                        
+                        let log = Log()
+                        
+                        let date = Date()
+                        let formatter = DateFormatter()
+                        formatter.dateFormat = "E, d MMM yyyy HH:mm:ss"
+                        
+                        log.timestamp = formatter.string(from: date)
+                        log.token = response
+                        log.sitekey = "6LeoeSkTAAAAAA9rkZs5oS82l69OEYjKRZAiKdaF"
+                        log.domain = "checkout.shopify.com"
+                        
+                        let realm = try! Realm()
+                        try! realm.write {
+                            realm.add(log)
+                        }
+                        
+                        let myAlert = UIAlertController(title: "Token Sent!", message: "Captcha Token has been sent.", preferredStyle: UIAlertControllerStyle.alert)
+                        myAlert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(myAlert, animated: true, completion: nil)
+                        return self.loadPage()
+                        
+                    }
+                }
+                
             }
             
         }
@@ -74,10 +111,6 @@ class SolveViewController: UIViewController, WKUIDelegate, WKNavigationDelegate,
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         self.fetchForToken()
-    }
-    
-    func submitToken(token: String!) {
-        // TODO
     }
 
     
