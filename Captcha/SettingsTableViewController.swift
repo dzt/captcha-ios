@@ -54,7 +54,11 @@ class SettingsTableViewController : UITableViewController, MFMailComposeViewCont
             openURL("https://github.com/dzt/captcha-ios")
         } else if indexPath.section == 2 && indexPath.row == 0 {
             print("Version")
-        } else {
+        } else if indexPath.section == 3 && indexPath.row == 0 {
+            openURL("http://accounts.google.com/signin")
+        }
+        
+        else {
             self.performSegue(withIdentifier: "acknowledgmentsModalToPush", sender: self)
         }
     }
